@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Privacy Policy for the Tahfa app by Code Fifty One Pvt Ltd.">
+<meta name="color-scheme" content="light dark">
+<title>Tahfa Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Source+Sans+3:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+  :root {
+    --ground: #F7F9FC;
+    --paper: #FFFFFF;
+    --ink: #111C26;
+    --muted: #5B6673;
+    --rule: #E3E8EF;
+    --accent: #B8860B;
+    --accent-soft: #FBF3DF;
+    --note-ink: #6B4E07;
+    --radius: 10px;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #0E151D;
+      --paper: #141D27;
+      --ink: #E8EDF3;
+      --muted: #98A3B0;
+      --rule: #243241;
+      --accent: #E0B84A;
+      --accent-soft: #2A2414;
+      --note-ink: #F0D48A;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #0E151D;
+    --paper: #141D27;
+    --ink: #E8EDF3;
+    --muted: #98A3B0;
+    --rule: #243241;
+    --accent: #E0B84A;
+    --accent-soft: #2A2414;
+    --note-ink: #F0D48A;
+  }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font: 400 17px/1.65 "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+    padding-inline: 20px;
+    padding-block: 40px 72px;
+  }
+  .page { max-width: 720px; margin-inline: auto; display: flex; flex-direction: column; gap: 40px; }
+
+  h1, h2, h3 {
+    font-family: "Poppins", "Segoe UI", system-ui, sans-serif;
+    font-weight: 600;
+    line-height: 1.25;
+    text-wrap: balance;
+    margin: 0;
+  }
+  h1 { font-size: clamp(30px, 6vw, 40px); letter-spacing: -0.01em; }
+  h2 { font-size: 22px; }
+  h3 { font-size: 17px; font-weight: 500; }
+  p { margin: 0; }
+  a { color: var(--ink); text-decoration-color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+
+  /* Masthead */
+  .mast { display: flex; flex-direction: column; gap: 14px; }
+  .eyebrow {
+    font: 500 12px/1 "Poppins", system-ui, sans-serif;
+    letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent);
+    display: flex; align-items: center; gap: 10px;
+  }
+  .eyebrow::after { content: ""; height: 1px; width: 40px; background: var(--accent); opacity: .6; }
+  .lede { color: var(--muted); font-size: 19px; max-width: 60ch; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px 22px; color: var(--muted); font-size: 15px; }
+  .meta b { color: var(--ink); font-weight: 600; }
+
+
+  /* Contents */
+  nav ol {
+    margin: 0; padding: 0; list-style: none;
+    columns: 2 220px; column-gap: 32px;
+    font-size: 15.5px;
+  }
+  nav li { padding: 4px 0; break-inside: avoid; }
+  nav a { text-decoration: none; color: var(--muted); }
+  nav a:hover { color: var(--ink); text-decoration: underline; text-decoration-color: var(--accent); }
+  nav h2 { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 10px; }
+
+  /* Sections */
+  section { display: flex; flex-direction: column; gap: 14px; scroll-margin-top: 20px; }
+  section + section { border-top: 1px solid var(--rule); padding-top: 36px; }
+  section ul { margin: 0; padding-left: 22px; display: flex; flex-direction: column; gap: 8px; }
+  section li::marker { color: var(--accent); }
+  .sub { display: flex; flex-direction: column; gap: 8px; }
+
+  /* At a glance */
+  .table-wrap { overflow-x: auto; border: 1px solid var(--rule); border-radius: var(--radius); background: var(--paper); }
+  table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 12px 14px; border-bottom: 1px solid var(--rule); }
+  tr:last-child td { border-bottom: 0; }
+  th { font: 500 12.5px/1.3 "Poppins", system-ui, sans-serif; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); background: var(--ground); }
+  td:first-child { font-weight: 600; white-space: nowrap; }
+  .tag {
+    display: inline-block; font-size: 12.5px; line-height: 1.4; padding: 1px 8px;
+    border-radius: 99px; border: 1px solid var(--rule); color: var(--muted); white-space: nowrap;
+  }
+  .tag.opt { border-color: color-mix(in srgb, var(--accent) 50%, transparent); color: var(--ink); }
+
+  .plain { color: var(--muted); }
+  footer { color: var(--muted); font-size: 14.5px; border-top: 1px solid var(--rule); padding-top: 20px; }
+
+  @media (max-width: 480px) {
+    body { font-size: 16.5px; padding-inline: 16px; }
+    .lede { font-size: 17.5px; }
+  }
+</style>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; }
+  img { max-width: 100%; }
+</style>
+</head>
+<body>
+<main class="page">
+
+  <header class="mast">
+    <div class="eyebrow">Tahfa app</div>
+    <h1>Privacy Policy</h1>
+    <p class="lede">What the Tahfa app collects, why it needs it, who else sees it, and how you stay in control. You can use most of Tahfa without an account.</p>
+    <div class="meta">
+      <span>Effective <b>17 September 2026</b></span>
+      <span>Applies to the Tahfa app for iOS and Android</span>
+    </div>
+  </header>
+
+
+  <nav aria-labelledby="toc">
+    <h2 id="toc">Contents</h2>
+    <ol>
+      <li><a href="#glance">Data at a glance</a></li>
+      <li><a href="#who">Who we are</a></li>
+      <li><a href="#collect">What we collect and why</a></li>
+      <li><a href="#device">Stored only on your phone</a></li>
+      <li><a href="#third">Services we rely on</a></li>
+      <li><a href="#share">Sharing</a></li>
+      <li><a href="#retention">How long we keep data</a></li>
+      <li><a href="#choices">Your choices and rights</a></li>
+      <li><a href="#security">Security</a></li>
+      <li><a href="#ar">AR Qibla view</a></li>
+      <li><a href="#changes">Changes to this policy</a></li>
+      <li><a href="#contact">Contact us</a></li>
+    </ol>
+  </nav>
+
+  <section id="glance">
+    <h2>Data at a glance</h2>
+    <p class="plain">We don't show ads, we don't use analytics or tracking SDKs, and we don't sell your data.</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th scope="col">Data</th><th scope="col">Used for</th><th scope="col">When</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Account details</td><td>Signing in, your profile, linking Tahfa devices to you</td><td><span class="tag opt">Only if you register</span></td></tr>
+          <tr><td>Location</td><td>Prayer times, Qibla direction, mosques near you</td><td><span class="tag opt">Only if you allow it</span></td></tr>
+          <tr><td>Tahfa device details</td><td>Setting up and controlling your Tahfa Box</td><td><span class="tag opt">When you add a device</span></td></tr>
+          <tr><td>Wi-Fi name and password</td><td>Connecting your Tahfa Box to your network</td><td><span class="tag">Sent to the Box over Bluetooth</span></td></tr>
+          <tr><td>Camera</td><td>Scanning a device's QR code, AR Qibla view</td><td><span class="tag">Processed on your phone</span></td></tr>
+          <tr><td>Notification token</td><td>Delivering notifications</td><td><span class="tag opt">If you allow notifications</span></td></tr>
+          <tr><td>Reading and app settings</td><td>Bookmarks, last read, reciter, language, prayer alerts</td><td><span class="tag">Stored on your phone</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="who">
+    <h2>Who we are</h2>
+    <p>Tahfa is operated by Code Fifty One Pvt Ltd ("we", "us"). We are responsible for the personal data described in this policy. You can reach us at <a href="mailto:store@code51.in">store@code51.in</a>.</p>
+  </section>
+
+  <section id="collect">
+    <h2>What we collect and why</h2>
+
+    <div class="sub">
+      <h3>Your account</h3>
+      <p>You can read the Quran, see prayer times and use most features as a guest. An account is only needed for things tied to you, such as adding a Tahfa device. When you register or sign in, we collect:</p>
+      <ul>
+        <li>your <b>username</b> and <b>password</b> (used to sign you in);</li>
+        <li>your <b>phone number</b> and <b>country code</b>;</li>
+        <li>an <b>email address</b>, if you add one to your profile.</li>
+      </ul>
+      <p>When you sign in, our servers issue sign-in tokens that the app keeps on your phone so you stay signed in.</p>
+    </div>
+
+    <div class="sub">
+      <h3>Location</h3>
+      <p>If you allow location access, Tahfa uses your phone's location to:</p>
+      <ul>
+        <li>calculate <b>prayer times</b> and the <b>Qibla direction</b> — this is done on your phone;</li>
+        <li>show your <b>city name</b>, using your phone's built-in location lookup (provided by Apple or Google);</li>
+        <li>find <b>mosques near you</b> — your coordinates are sent to our servers and to Google Maps (see <a href="#third">Services we rely on</a>).</li>
+      </ul>
+      <p>The last known location is stored on your phone so the app works quickly. If you don't allow location, Tahfa uses a default location (Makkah) and prayer times will not match your area.</p>
+    </div>
+
+    <div class="sub">
+      <h3>Your Tahfa device</h3>
+      <p>When you add a Tahfa Box to your account, we store information needed to run it: its device ID and name, the mosque you choose for it, its volume and tuning settings, whether it is online, and the name of the Wi-Fi network it is connected to.</p>
+      <p>To connect the Box to your Wi-Fi, the app uses <b>Bluetooth</b> to find nearby Tahfa devices and sends your <b>Wi-Fi network name and password directly to the Box</b>. The app does not send your Wi-Fi password to our servers.</p>
+    </div>
+
+    <div class="sub">
+      <h3>Camera</h3>
+      <p>The camera turns on only when you choose to scan a Tahfa device's QR code or open the augmented-reality (AR) Qibla view. The picture is shown live on your screen and processed on your phone. Nothing is recorded, saved or uploaded, and no face or body information is collected. See <a href="#ar">AR Qibla view</a>.</p>
+    </div>
+
+    <div class="sub">
+      <h3>Notifications</h3>
+      <p>If you allow notifications, Firebase Cloud Messaging (Google) gives your phone a notification token so messages can be delivered to it.</p>
+    </div>
+  </section>
+
+  <section id="device">
+    <h2>Stored only on your phone</h2>
+    <p>These stay on your device and are not sent to us:</p>
+    <ul>
+      <li>Quran bookmarks and your last-read position;</li>
+      <li>your chosen reciter, display options and app language;</li>
+      <li>prayer-time notification choices and calculation method;</li>
+      <li>copies of translated app text, kept so it loads faster.</li>
+    </ul>
+    <p>Uninstalling the app removes them.</p>
+  </section>
+
+  <section id="third">
+    <h2>Services we rely on</h2>
+    <p>Some features work by contacting other services. Like any internet request, these reveal your IP address and basic device information to the provider.</p>
+    <ul>
+      <li><b>Google Firebase</b> — notifications (Cloud Messaging) and app integrity checks (App Check), which confirm requests come from the genuine app.</li>
+      <li><b>Google Maps Platform</b> — finding and mapping nearby mosques. Your location is sent to Google for this. Directions open in Google Maps.</li>
+      <li><b>Google Translate</b> — if you choose a language other than English, the app's own interface text is sent to Google Translate. Your personal information is not included.</li>
+      <li><b>Google Fonts</b> — some typefaces, including the Arabic calligraphy font, are downloaded from Google.</li>
+      <li><b>Islamic Network</b> (cdn.islamic.network) — Quran recitation audio is streamed from this service, which sees which verses are requested.</li>
+      <li><b>Apple App Store and Google Play</b> — checking whether a newer version of the app is available.</li>
+    </ul>
+    <p>Each provider handles data under its own privacy policy.</p>
+  </section>
+
+  <section id="share">
+    <h2>Sharing</h2>
+    <p>We don't sell or rent your personal data, and we don't share it for advertising. We share it only:</p>
+    <ul>
+      <li>with the service providers listed above, to run the features you use;</li>
+      <li>with hosting and infrastructure providers that run our servers for us — Amazon Web Services (AWS), in its Mumbai, India region;</li>
+      <li>when the law requires it, or to protect the safety of our users or the public;</li>
+      <li>as part of a merger or sale of our business, in which case this policy continues to apply.</li>
+    </ul>
+  </section>
+
+  <section id="retention">
+    <h2>How long we keep data</h2>
+    <p>We keep your account and device information while your account is active. When you delete your account, we delete this information within 30 days, except where the law requires us to keep it longer.</p>
+  </section>
+
+  <section id="choices">
+    <h2>Your choices and rights</h2>
+    <ul>
+      <li><b>Use Tahfa as a guest.</b> No account is needed to read the Quran, see prayer times or use the Qibla compass.</li>
+      <li><b>Control permissions.</b> You can turn off location, camera, Bluetooth and notification access at any time in your phone's settings. The features that need them will stop working.</li>
+      <li><b>Delete your account</b> in the app, under <b>Profile → Delete Account</b>.</li>
+      <li><b>Access or correct your data</b>, or ask us to delete it, by emailing <a href="mailto:store@code51.in">store@code51.in</a>.</li>
+    </ul>
+    <p>Depending on where you live, you may have more rights, such as objecting to how we use your data or complaining to your local data-protection authority.</p>
+  </section>
+
+  <section id="security">
+    <h2>Security</h2>
+    <p>We use reasonable technical and organisational measures to protect your information. Passwords are hidden as you type and never shown in the app, and sign-in tokens are stored on your phone only. No system is completely secure, but we work to protect your information and to fix problems quickly.</p>
+  </section>
+
+  <section id="ar">
+    <h2>AR Qibla view</h2>
+    <p>The Qibla compass has an optional AR view that shows the Qibla direction over your camera's live picture.</p>
+    <ul>
+      <li>It opens only when you tap <b>AR</b> on the Qibla screen, and the camera switches off as soon as you leave that view.</li>
+      <li>The camera picture stays on your phone. It is not recorded, saved, uploaded or shared, and it is not used to identify people or places.</li>
+      <li>It uses your location and compass only to point toward the Qibla.</li>
+      <li><b>Young users should open the AR view with a parent or guardian.</b> Using the camera means holding up the phone and moving around, so an adult should supervise and make sure the surroundings are safe.</li>
+    </ul>
+  </section>
+
+  <section id="changes">
+    <h2>Changes to this policy</h2>
+    <p>If we change this policy, we'll update the effective date at the top. If the changes are significant, we'll also tell you in the app before they take effect.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact us</h2>
+    <p>Questions or requests about your privacy:<br>
+      <a href="mailto:store@code51.in">store@code51.in</a><br>
+      Code Fifty One Pvt Ltd
+    </p>
+  </section>
+
+  <footer>© 2026 Code Fifty One Pvt Ltd. Tahfa privacy policy.</footer>
+</main>
+</body>
+</html>
